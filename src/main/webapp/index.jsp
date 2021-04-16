@@ -96,3 +96,19 @@
 </div>
 </body>
 </html>
+<!-- 
+create table doubts(
+doubtId integer primary key auto_increment,
+authorId integer,
+subjectId integer,
+detail varchar(100),
+tutorId integer,
+createDate date,
+sessionDateTime varchar(100),
+sessionLink varchar(1000),
+foreign key (authorId) references user(userId),
+foreign key (tutorId) references user(userId),
+foreign key (subjectId) references subject(subjectId)
+);
+ -->
+
